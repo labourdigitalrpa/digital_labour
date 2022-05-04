@@ -6,7 +6,8 @@
 </div>
 <div class="col-8 m-auto pt-8 pb-2 text-center">
     
-    <form name="form" id="form" method="Post">
+    <form name="form-group" id="form" action="{% url 'cadastrarClientePf' %}" method="Post">
+        {% csrf_token %}
         <div class="form-group mt-4 ">Nopme Completo:  {{form.nome_completo}}</div>
         <div class="form-group mt-4 ">Cpf:  {{form.cpf}}</div>
         <div class="form-group mt-4 ">Chave Ecac:  {{form.chave_ecac}}</div>
