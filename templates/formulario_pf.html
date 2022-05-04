@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="col-8 m-auto pt-8 pb-2 text-center">
+    <h1>Cadastrar novo Cliente</h1>
+</div>
+<div class="col-8 m-auto pt-8 pb-2 text-center">
+    
+    <form name="form" id="form" method="Post">
+        <div class="form-group mt-4 ">Nopme Completo:  {{form.nome_completo}}</div>
+        <div class="form-group mt-4 ">Cpf:  {{form.cpf}}</div>
+        <div class="form-group mt-4 ">Chave Ecac:  {{form.chave_ecac}}</div>
+        <div class="form-group mt-4 ">Senha Ecac:  {{form.senha_ecac}}</div>
+        <div class="form-group mt-4 ">Email:  {{form.email}}</div>
+        <div class="form-group mt-4 ">Ativar:  {{form.ativo}}</div>
+        <input type="submit" class="btn btn-success mt-4" value="Cadastrar">
+    </form>
+    <!--<form name="form" id="form" method="Post">
+        {% csrf_token %}
+        {{ form.as_p }} 
+        <input type="submit" class="btn btn-success" value="Cadastrar">
+    </form>-->
+
+</div> 
+{% endblock %}
