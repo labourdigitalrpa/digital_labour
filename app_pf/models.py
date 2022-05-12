@@ -7,3 +7,6 @@ class clientePfModel(models.Model):
     senha_ecac = models.CharField(max_length=14)
     email = models.EmailField(max_length=40)
     ativo = models.BooleanField(default=True)
+
+    def __str__(self) -> str:
+        return super().__str__()

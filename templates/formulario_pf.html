@@ -6,21 +6,19 @@
 </div>
 <div class="col-8 m-auto pt-8 pb-2 text-center">
     
-    <form name="form-group" id="form" action="{% url 'cadastrarClientePf' %}" method="Post">
+    <form name="form" id="form" action="{% if db %}{% url 'updateClientePf' db.id %}{% else %}{% url 'cadastrarClientePf' %}{% endif %}" method="Post">
         {% csrf_token %}
-        <div class="form-group mt-4 ">Nopme Completo:  {{form.nome_completo}}</div>
+        
+        <div class="form-group mt-4 ">Nome Completo:  {{form.nome_completo}}</div>
         <div class="form-group mt-4 ">Cpf:  {{form.cpf}}</div>
         <div class="form-group mt-4 ">Chave Ecac:  {{form.chave_ecac}}</div>
         <div class="form-group mt-4 ">Senha Ecac:  {{form.senha_ecac}}</div>
         <div class="form-group mt-4 ">Email:  {{form.email}}</div>
-        <div class="form-group mt-4 ">Ativar:  {{form.ativo}}</div>
+        <div class="form-group mt-4 ">Ativar:  {{form.ativo}}
+        </div>
         <input type="submit" class="btn btn-success mt-4" value="Cadastrar">
     </form>
-    <!--<form name="form" id="form" method="Post">
-        {% csrf_token %}
-        {{ form.as_p }} 
-        <input type="submit" class="btn btn-success" value="Cadastrar">
-    </form>-->
 
 </div> 
 {% endblock %}
+<!--<div class="form-group mt-4 ">ID:  {{form.id}}</div>-->

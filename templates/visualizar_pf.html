@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="col-8 m-auto pt-8 pb-2 text-center">
+    <h1>Dados CLiente</h1>
+</div>
+
+<div class="col-8 m-auto pt-8 pb-2 text-center">
+    <strong>ID:</strong>{{db.id}}<br>
+    <strong>NOME COMPLETO:</strong>{{db.nome_completo}}<br>
+    <strong>CPF:</strong>{{db.cpf}}<br>
+    <strong>CHAVE ECAC:</strong>{{db.chave_ecac}}<br>
+    <strong>SENHA ECAC:</strong>{{db.senha_ecac}}<br>
+    <strong>EMAIL:</strong>{{db.email}}<br>
+    <strong>SITUAÇÃO:
+    </strong>{% if db.ativo %}
+    Ativo
+    {% else %}
+    Inativo
+    {% endif %}<br>
+</div> 
+{% endblock %}

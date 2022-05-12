@@ -1,28 +1,13 @@
-Recomecei todo.
-https://www.webdesignemfoco.com/cursos/python/crud-com-python-2-template
+Estou na aula 6
+https://webdesignemfoco.com/cursos/python/crud-com-python-6-delete-e-ajax
+está dando erro ao inserir valores de amail invalidos.
 
+4:20
+
+
+precisa adicionar uma msg quando os dados forem errados.
+
+Terminado o criar o cliente agora começa os botoes laterais e o editar
 
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!--<a class="navbar-brand" href="{% url 'cadastro_clientes' %}">Cadastrar Clientes</a>
-                <a class="navbar-brand" href="{% url 'lista' %}">Lista Clientes</a>-->
-
-
-
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
